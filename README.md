@@ -2,3 +2,5 @@
 
 This is the first project from the Odin Curriculum. In this case, we are going to re-create the Google Homepage with plain HTML, CSS and a little bit of Javascript for some panels. 
 
+Let's see how it goes
+
