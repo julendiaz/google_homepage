@@ -69,17 +69,22 @@ table {
     margin: 0 auto;
 }
 
+/* Search nav Bar */
+
 #search-nav {
     display: flex;
     margin: -15px auto;
     width: 85%;
     height: 80px;
     border-radius: 5px;
-    background: #FFFFFF;
-/* google-shadow */
-
-box-shadow: 0px 4px 31px -8px rgba(80, 80, 80, 0.33);
+    background: #fafafa;
 }
+
+#search-nav:hover {
+    /* google-shadow */
+    box-shadow: 0px 4px 31px -8px rgba(80, 80, 80, 0.33);
+}
+
 
 #lupa {
     width: 35px;
@@ -87,6 +92,11 @@ box-shadow: 0px 4px 31px -8px rgba(80, 80, 80, 0.33);
     opacity: 60%;
     margin-left: 22px;
     margin-top: 22px;
+}
+
+#lupa:hover {
+    opacity: 90%;
+    cursor: pointer;
 }
 
 #mic {
@@ -123,6 +133,8 @@ box-shadow: 0px 4px 31px -8px rgba(80, 80, 80, 0.33);
       opacity: 50%;
   }
 
+/* Button Google Search  */
+
 #btn-search {
     display: block;
     margin: 80px auto;
@@ -140,6 +152,8 @@ box-shadow: 0px 4px 31px -8px rgba(80, 80, 80, 0.33);
     background: #e4e4e4;
     cursor: pointer;
 }
+
+/* Footer */
 
 #footer{
     background-color: black;
