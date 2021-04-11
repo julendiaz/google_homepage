@@ -1,4 +1,4 @@
-# Google Homepage Simulation - The Odin Project #01
+# Google Homepage - The Odin Project #01
 
 ![Google-Logo](https://user-images.githubusercontent.com/66780327/112620395-c3381280-8e28-11eb-872e-19d1cf31583a.png)
 
@@ -25,3 +25,20 @@ This was the first time working with a developer's environment in Linux. At firs
 - Use the footer to navigate through official Google Links 
 - Blops on the background for visual aesthetics 
 - Google apps plus Profile pic in the center for simple alignment
+
+## Approaches 
+
+### Search Bar Box-Shadow 
+
+For this feature, I tried different ways of transitioning between shadows and background-colors when hovering the mouse. In the end, I really liked the way panels in "The Odin Project". I tried mimicking that effect by putting a darker color when hovering and using a transition of 2 seconds. 
+
+```css 
+#search-nav {
+    box-shadow: 0px 4px 31px -8px rgba(80, 80, 80, 0.33);
+    transition: 0.2s;
+}
+
+#search-nav:hover {
+    box-shadow: 0px 4px 31px -8px rgba(10, 10, 10, 0.33);
+}
+```
