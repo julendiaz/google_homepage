@@ -155,6 +155,45 @@ table {
 
 /* Footer */
 
-#footer{
-    background-color: black;
+.footer{
+    background-color: #F0F0F0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: #979797;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.footer-links:hover {
+    color: rgb(99, 99, 99);
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
+#footer-container-right {
+    width: 500px;
+}
+
+#footer-container-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left-links{
+    margin-left: 50px;
 }
