@@ -58,7 +58,7 @@ table {
 }
 
 body {
-    background-image: url(images/google-blops.png);
+    background-image: url(./images/google-blops.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
