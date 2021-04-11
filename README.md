@@ -18,7 +18,7 @@ This was the first time working with a developer's environment in Linux. At firs
 - [X] Implement your own design with Figma
 - [ ] Create and Share a Live Preview Simulation of the site 
 
-## Features 
+## Key Features 
 
 - Type anything you want in the central search bar
 - Hover over elements to see the change in style
