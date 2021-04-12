@@ -11,6 +11,10 @@
     --darkergrey: rgb(80, 80, 80);
 }
 
+body {
+    background-color: white;
+}
+
 /* Header */
 
 #profile-container {
