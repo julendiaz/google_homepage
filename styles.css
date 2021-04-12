@@ -1,5 +1,4 @@
 
-
 /* Variables for Typography and Color */
 
 :root {
@@ -8,7 +7,7 @@
     --hovergrey: #f0f0f0;
     --almostwhite: rgb(252, 252, 252);
     --almostgrey: #F0F0F0;
-    --greytext: #888888;
+    --greytext: #888888; 
     --darkergrey: rgb(80, 80, 80);
 }
 
@@ -51,13 +50,13 @@
 
 /* Main */
 
-#things-in-center {
-    width: 800px;
-    height: 400px;
-    margin: 150px auto;
-}
+#things-in-center { 
+    width: 800px; 
+    height: 400px; 
+    margin: 130px auto; 
+} 
 
-#google-image {
+#google-image { 
     width: 38%;
     display: block;
     margin: 0 auto;
