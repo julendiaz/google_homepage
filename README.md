@@ -1,6 +1,8 @@
 # Google Homepage - The Odin Project #01
 
-![Google-Logo](https://user-images.githubusercontent.com/66780327/112620395-c3381280-8e28-11eb-872e-19d1cf31583a.png)
+![Google-Logo](https://user-images.githubusercontent.com/66780327/114438684-5fec0580-9bc8-11eb-83ff-4c16f9cc67fc.PNG)
+
+Go to the [Live Preview](https://shifujulen.github.io/google_homepage/)
 
 ## Brief Introduction 
 
@@ -16,7 +18,7 @@ This was the first time working with a developer's environment in Linux. At firs
 - [X] How elements get styled and aligned 
 - [X] Get used to basic Git Commands
 - [X] Implement your own design with Figma
-- [ ] Create and Share a Live Preview Simulation of the site 
+- [X] Create and Share a Live Preview Simulation of the site 
 
 ## Key Features 
 
