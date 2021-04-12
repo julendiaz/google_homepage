@@ -1,214 +1,212 @@
-
 /* Variables for Typography and Color */
 
 :root {
-    --montserrat: 'Montserrat', sans-serif;
-    --lightgrey: #2e2e2e;
-    --hovergrey: #333333;
-    --almostwhite: rgb(56, 56, 56);
-    --almostgrey: #272727;
-    --greytext: #888888; 
-    --darkergrey: rgb(168, 168, 168);
+  --montserrat: "Montserrat", sans-serif;
+  --containerback: #2e2e2e;
+  --containerhover: #333333;
+  --searchback: rgb(56, 56, 56);
+  --footerback: #272727;
+  --footertext: #888888;
+  --texthover: rgb(168, 168, 168);
 }
 
 body {
-    background-color: rgb(29, 29, 29);
+  background-color: rgb(29, 29, 29);
 }
 
 /* Header */
 
 #profile-container {
-    background-color: var(--lightgrey);
-    width: 65px;
-    height: 33px;
-    margin: 30px auto;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
+  background-color: var(--containerback);
+  width: 65px;
+  height: 33px;
+  margin: 30px auto;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 #profile-container:hover {
-    background-color: var(--hovergrey);
-    cursor: pointer;
+  background-color: var(--containerhover);
+  cursor: pointer;
 }
 
 #google-drive-container {
-    width: 100%;
+  width: 100%;
 }
 
 #drive-icon {
-    width: 100%;
-    margin-left: 1px;
-    margin-top: 2px;
+  width: 100%;
+  margin-left: 1px;
+  margin-top: 2px;
 }
 
 #pic-container {
-    width: 100%;
-    border-radius: 0 5px 5px 0;
+  width: 100%;
+  border-radius: 0 5px 5px 0;
 }
 
 #profile-pic {
-    width: 100%;
-    border-radius: 0 5px 5px 0;
+  width: 100%;
+  border-radius: 0 5px 5px 0;
 }
 
 /* Main */
 
-#things-in-center { 
-    width: 800px; 
-    height: 400px; 
-    margin: 130px auto; 
-} 
+#things-in-center {
+  width: 800px;
+  height: 400px;
+  margin: 130px auto;
+}
 
-#google-image { 
-    width: 38%;
-    display: block;
-    margin: 0 auto;
+#google-image {
+  width: 38%;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Search nav Bar */
 
 #search-nav {
-    display: flex;
-    margin: 0 auto;
-    font-family: var(--montserrat);
-    width: 75%;
-    height: 50px;
-    border-radius: 5px;
-    background: var(--almostwhite);
-    box-shadow: 0px 4px 31px -8px rgba(80, 80, 80, 0.33);
-    transition: 0.2s;
+  display: flex;
+  margin: 0 auto;
+  font-family: var(--montserrat);
+  width: 75%;
+  height: 50px;
+  border-radius: 5px;
+  background: var(--searchback);
+  box-shadow: 0px 4px 31px -8px rgba(80, 80, 80, 0.33);
+  transition: 0.2s;
 }
 
 #search-nav:hover {
-    /* google-shadow */
-    box-shadow: 0px 4px 31px -8px rgba(117, 117, 117, 0.33);
+  /* google-shadow */
+  box-shadow: 0px 4px 31px -8px rgba(117, 117, 117, 0.33);
 }
 
-
 #lupa {
-    width: 25px;
-    height: 25px;
-    opacity: 40%;
-    margin-left: 11px;
-    margin-top: 13px;
+  width: 25px;
+  height: 25px;
+  opacity: 40%;
+  margin-left: 11px;
+  margin-top: 13px;
 }
 
 #lupa:hover {
-    opacity: 70%;
-    cursor: pointer;
+  opacity: 70%;
+  cursor: pointer;
 }
 
 #mic {
-    width: 18px;
-    height:24px;
-    margin-top: 12px;
-    margin-left: 23px;
-    opacity: 80%;
+  width: 18px;
+  height: 24px;
+  margin-top: 12px;
+  margin-left: 23px;
+  opacity: 80%;
 }
 
 #mic:hover {
-    opacity: 100%;
-    cursor: pointer;
+  opacity: 100%;
+  cursor: pointer;
 }
 
-#search-nav input[type=text] {
-    padding: 6px;
-    border: none;
-    margin-left: 14px;
-    margin-top: 3px;
-    background-color: transparent;
-    font-family: var(--montserrat);
-    width: 80%;
-    height: 33px;
-    font-size: 0.9rem;
-    color: rgb(219, 219, 219);
-    appearance: none;
-  }
+#search-nav input[type="text"] {
+  padding: 6px;
+  border: none;
+  margin-left: 14px;
+  margin-top: 3px;
+  background-color: transparent;
+  font-family: var(--montserrat);
+  width: 80%;
+  height: 33px;
+  font-size: 0.9rem;
+  color: rgb(219, 219, 219);
+  appearance: none;
+}
 
-  #search-nav input[type=text]:focus {
-      outline: none;
-  }
+#search-nav input[type="text"]:focus {
+  outline: none;
+}
 
-  #search-nav input[type=text]::placeholder {
-      opacity: 80%;
-  }
+#search-nav input[type="text"]::placeholder {
+  opacity: 80%;
+}
 
 /* Buttons */
 
 #btn-container {
-    display: flex;
-    margin: 0 auto;
-    width: 350px;
-    justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  width: 350px;
+  justify-content: center;
 }
 
 .btn {
-    display: block;
-    margin: 45px auto;
-    width: 160px;
-    height: 45px;
-    font-size: 0.8rem;
-    font-weight: 400;
-    color: #838383;
-    border: 0;
-    background: var(--lightgrey);
-    border-radius: 5px;
-    font-family: var(--montserrat);
+  display: block;
+  margin: 45px auto;
+  width: 160px;
+  height: 45px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #838383;
+  border: 0;
+  background: var(--containerback);
+  border-radius: 5px;
+  font-family: var(--montserrat);
 }
 
 #btn-search:hover {
-    background: var(--hovergrey);
-    cursor: pointer;
+  background: var(--containerhover);
+  cursor: pointer;
 }
 
 #btn-search:focus {
-    outline: none;
+  outline: none;
 }
 
 /* Toggle Theme */
 
 .toggle {
-    margin: 0 auto;
-    display: block;
+  margin: 0 auto;
+  display: block;
 }
 /* Footer */
 
 footer {
-    background-color: var(--almostgrey);
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 53px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    font-family: var(--montserrat);
-    font-weight: 400;
-    font-size: 14px;
+  background-color: var(--footerback);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 53px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--montserrat);
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .footer-links {
-    color: var(--greytext);
-    text-decoration: none;
+  color: var(--footertext);
+  text-decoration: none;
 }
 
 .footer-links:hover {
-    color: var(--darkergrey);
+  color: var(--texthover);
 }
 
 .footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
 }
 
 #footer-container-left {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.left-links{
-    margin-left: 50px;
+.left-links {
+  margin-left: 50px;
 }
