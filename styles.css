@@ -50,20 +50,24 @@ table {
 	border-spacing: 0;
 }
 
-
-/* MAIN CSS */
+/* Variables for Typography and Color */
 
 :root {
     --montserrat: 'Montserrat', sans-serif;
+    --lightgrey: #f5f5f5;
+    --hovergrey: #f0f0f0;
+    --almostwhite: rgb(252, 252, 252);
+    --almostgrey: #F0F0F0;
+    --greytext: #888888;
+    --darkergrey: rgb(80, 80, 80);
 }
 
-
-/* Google Apps and Profile */
+/* Header */
 
 #profile-container {
-    background-color: #F0F0F0;
-    width: 80px;
-    height: 40px;
+    background-color: var(--lightgrey);
+    width: 65px;
+    height: 33px;
     margin: 30px auto;
     border-radius: 5px;
     display: flex;
@@ -71,7 +75,7 @@ table {
 }
 
 #profile-container:hover {
-    background-color: #e6e6e6;
+    background-color: var(--hovergrey);
     cursor: pointer;
 }
 
@@ -93,20 +97,18 @@ table {
 #profile-pic {
     width: 100%;
     border-radius: 0 5px 5px 0;
-    
 }
 
-
-/* Things in Center */
+/* Main */
 
 #things-in-center {
     width: 800px;
     height: 400px;
-    margin: 100px auto;
+    margin: 150px auto;
 }
 
 #google-image {
-    width: 45%;
+    width: 38%;
     display: block;
     margin: 0 auto;
 }
@@ -115,12 +117,12 @@ table {
 
 #search-nav {
     display: flex;
-    margin: -15px auto;
+    margin: 0 auto;
     font-family: var(--montserrat);
-    width: 85%;
-    height: 60px;
+    width: 75%;
+    height: 50px;
     border-radius: 5px;
-    background: #fafafa;
+    background: var(--almostwhite);
     box-shadow: 0px 4px 31px -8px rgba(80, 80, 80, 0.33);
     transition: 0.2s;
 }
@@ -134,21 +136,21 @@ table {
 #lupa {
     width: 25px;
     height: 25px;
-    opacity: 60%;
-    margin-left: 18px;
-    margin-top: 18px;
+    opacity: 40%;
+    margin-left: 11px;
+    margin-top: 13px;
 }
 
 #lupa:hover {
-    opacity: 90%;
+    opacity: 70%;
     cursor: pointer;
 }
 
 #mic {
-    width: 22px;
-    height:30px;
-    margin-top: 15px;
-    margin-left: 16px;
+    width: 18px;
+    height:24px;
+    margin-top: 12px;
+    margin-left: 23px;
     opacity: 80%;
 }
 
@@ -160,13 +162,13 @@ table {
 #search-nav input[type=text] {
     padding: 6px;
     border: none;
-    margin-left: 23px;
-    margin-top: 7px;
+    margin-left: 14px;
+    margin-top: 3px;
     background-color: transparent;
     font-family: var(--montserrat);
     width: 80%;
     height: 33px;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: rgb(56, 56, 56);
     appearance: none;
   }
@@ -179,31 +181,31 @@ table {
       opacity: 50%;
   }
 
-/* Button Google Search  */
+/* Buttons */
 
 #btn-container {
     display: flex;
     margin: 0 auto;
-    width: 430px;
+    width: 350px;
     justify-content: center;
 }
 
 .btn {
     display: block;
-    margin: 60px auto;
-    width: 200px;
-    height: 55px;
-    font-size: 0.9rem;
-    font-weight: 500;
+    margin: 45px auto;
+    width: 160px;
+    height: 45px;
+    font-size: 0.8rem;
+    font-weight: 400;
     color: #838383;
     border: 0;
-    background: #F0F0F0;
+    background: var(--lightgrey);
     border-radius: 5px;
     font-family: var(--montserrat);
 }
 
 #btn-search:hover {
-    background: #e4e4e4;
+    background: var(--hovergrey);
     cursor: pointer;
 }
 
@@ -214,11 +216,11 @@ table {
 /* Footer */
 
 footer {
-    background-color: #F0F0F0;
+    background-color: var(--almostgrey);
     position: fixed;
     left: 0;
     bottom: 0;
-    height: 60px;
+    height: 53px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -227,25 +229,25 @@ footer {
 
 .footer-links {
     text-decoration: none;
-    color: #979797;
+    color: var(--greytext);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
 }
 
 .footer-links:hover {
-    color: rgb(99, 99, 99);
+    color: var(--darkergrey);
 }
 
 .footer-container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 500px;
+    justify-content: space-around;
+    width: 400px;
 }
 
 #footer-container-right {
-    width: 500px;
+    width: 400px;
 }
 
 #footer-container-left {
