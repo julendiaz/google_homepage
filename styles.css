@@ -162,6 +162,9 @@
     outline: none;
 }
 
+/* Toggle Theme */
+
+
 /* Footer */
 
 footer {
@@ -174,14 +177,13 @@ footer {
     display: flex;
     justify-content: space-between;
     font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .footer-links {
-    text-decoration: none;
     color: var(--greytext);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+    text-decoration: none;
 }
 
 .footer-links:hover {
@@ -192,10 +194,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 400px;
-}
-
-#footer-container-right {
     width: 400px;
 }
 
