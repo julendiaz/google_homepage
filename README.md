@@ -113,6 +113,7 @@ function toggleTheme() {
 }
 ```
 
+If you happen to struggle with some of my explanations, don't hesitate to go to this [guide](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#using-separate-stylesheets) or this [article](https://html.form.guide/html-form/html-checkbox-events/).
 I think of it as a simple and easy way of implementing the theme toggle. If you happen to know of a better way of doing it, please let me know :)
 
 ## Additional Improvements
