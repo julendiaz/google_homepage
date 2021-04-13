@@ -1,7 +1,5 @@
 // Toggle Theme
 // Select the button
-console.log("hello world")
-
 const toggle = document.querySelector("#toggle")
 // Select the stylesheet
 const theme = document.querySelector("#theme-link");
@@ -13,6 +11,7 @@ function toggleTheme() {
     } else {
         theme.href = "styles.css";
     }
-}
+};
+
 
 

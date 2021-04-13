@@ -62,6 +62,59 @@ footer {
 }
 ```
 
+### Switch Toggle Theme
+
+For implementing the famous Switch Toggle between Light and Dark themes, I wanted to learn how to design and implement the rounded switch button. I haven't really thought about it, but it makes sense that it is based on a checkbox input. It wasn't that difficult to find how to develop it. This is the [source](https://www.w3schools.com/howto/howto_css_switch.asp) I used.
+
+```html
+<label class="switch">
+  <input type="checkbox" id="toggle" onclick="toggleTheme()" />
+  <span class="slider round"></span>
+</label>
+```
+
+If you happen to question why I added the "onclick" attribute, is because of the approach for using javascript when clicking on the checkbox and toggle themes.
+
+There are a few different ways of implementing the toggle, but I happen to like the one where you just make a copy of the main css and change the color variables into a dark mode.
+
+```css
+:root {
+  --montserrat: "Montserrat", sans-serif;
+  --containerback: #2e2e2e;
+  --containerhover: #333333;
+  --searchback: rgb(56, 56, 56);
+  --footerback: #272727;
+  --footertext: #888888;
+  --texthover: rgb(168, 168, 168);
+}
+```
+
+Then, we add an id in the link for the css so we can grab the href with javascript and change it when we check the switch.
+
+```html
+<link rel="stylesheet" href="styles.css" id="theme-link" />
+```
+
+After we have designed the switch, create a separate dark.css file and identify our stylesheet line, we create a javascript file and run the function we wrote on the "onclick" property for the input.
+
+```javascript
+// Select the button
+const toggle = document.querySelector("#toggle");
+// Select the stylesheet
+const theme = document.querySelector("#theme-link");
+
+// Listen for a click on the checkbox
+function toggleTheme() {
+  if (toggle.checked) {
+    theme.href = "dark.css";
+  } else {
+    theme.href = "styles.css";
+  }
+}
+```
+
+I think of it as a simple and easy way of implementing the theme toggle. If you happen to know of a better way of doing it, please let me know :)
+
 ## Additional Improvements
 
 These are a few improvements that I would like to work on as I have free time during the next months. I will try to implement some of the new acquired knowledge during The Odin Project.
