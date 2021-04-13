@@ -10,7 +10,7 @@
     <!-- RESET CSS -->
     <link rel="stylesheet" href="reset.css">
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" id="theme-link">
     <!-- TYPOGRAPHY -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet">
@@ -42,15 +42,17 @@
                 <button class="btn" id="btn-search">Google Search</button>
                 <button class="btn" id="btn-search">I'm feeling lucky</button>
             </div>
-            <!-- <button class="toggle">Toggle Theme</button> -->
         </div>
     </main>
-    
 
     <!-- Footer -->
     <footer>
         <ul class="footer-container" id="footer-container-left">
             <li><a class="footer-links left-links" href="https://about.google/" target="_blank">About Google</a></li>
+            <label class="switch">
+                <input type="checkbox" id="toggle" onclick="toggleTheme()">
+                <span class="slider round"></span>
+            </label> 
         </ul>
         <ul class="footer-container">
             <li><a class="footer-links" href="https://sustainability.google/intl/es/commitments-europe/" target="_blank">Carbon neutral since 2007</a></li>
@@ -62,5 +64,7 @@
         </ul>
     </footer>
    
+    <!-- Javascript -->
+    <script src="script.js"></script>
 </body>
 </html>
