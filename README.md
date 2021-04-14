@@ -26,6 +26,7 @@ This was the first time working with a developer's environment in Linux. At firs
 - Hover over elements to see the change in style
 - Use the footer to navigate through official Google Links
 - Google apps plus Profile pic in the center for simple alignment
+- Dark Theme Toggle
 
 ## Approaches
 
@@ -125,8 +126,14 @@ These are a few improvements that I would like to work on as I have free time du
 - [ ] Pop-up with Javascript for Google Apps and Profile
 - [ ] Voice recognition software for searching
 - [ ] Build the results page layout
+- [ ] Make it Responsive
+- [ ] Add Spanish and Japanese Versions
 
 If you have a cool idea on how to implement a feature, please don't hesitate on contributing on the project or send me a message with the feedback.
+
+## Other Sources
+
+[How to build a great search box](https://medium.com/@samdutton/how-to-build-a-great-search-box-2b9a6d1dce0d)
 
 ## Credits
 
