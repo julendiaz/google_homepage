@@ -79,11 +79,13 @@ body {
 .grid-item {
   background-color: white;
   border-radius: 5px;
+  opacity: 70%;
 }
 
 .grid-item:hover {
   background-color: var(--containerhover);
   cursor: pointer;
+  opacity: 100%;
 }
 
 .grid-item img {

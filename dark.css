@@ -73,11 +73,13 @@ body {
 .grid-item {
   background-color: var(--footerback);
   border-radius: 5px;
+  opacity: 70%;
 }
 
 .grid-item:hover {
   background-color: var(--containerhover);
   cursor: pointer;
+  opacity: 100%;
 }
 
 .grid-item img {
@@ -89,7 +91,7 @@ body {
 .grid-item p {
   font-size: 0.6rem;
   font-family: var(--montserrat);
-  color: var(--footertext);
+  color: rgb(219, 219, 219);
   font-weight: 400;
   text-align: center;
   margin-top: -3px;
