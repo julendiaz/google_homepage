@@ -4,6 +4,11 @@
 
 Go to the [Live Preview](https://shifujulen.github.io/google_homepage/)
 
+## Table of Contents
+
+- [Brief Introduction](#Brief-Introduction)
+- [Approaches](#Approaches)
+
 ## Brief Introduction
 
 This is the first project from the Odin Curriculum. In this case, we are going to re-create the Google Homepage with plain HTML and CSS.
@@ -27,6 +32,7 @@ This was the first time working with a developer's environment in Linux. At firs
 - Use the footer to navigate through official Google Links
 - Google apps plus Profile pic in the center for simple alignment
 - Dark Theme Toggle
+- Google Apps Display Pop Up
 
 ## Approaches
 
@@ -117,13 +123,69 @@ function toggleTheme() {
 If you happen to struggle with some of my explanations, don't hesitate to go to this [guide](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#using-separate-stylesheets) or this [article](https://html.form.guide/html-form/html-checkbox-events/).
 I think of it as a simple and easy way of implementing the theme toggle. If you happen to know of a better way of doing it, please let me know :)
 
+### Google Apps Pop Up
+
+For this feature, I wanted to try using the Grid System instead of Flex Box. It actually seemed more appropiate because of the way google apps are displayed in the official website. I was sure that there was a way to organize items in a common grid with just a few lines of CSS code.
+
+In the html file, I just added all of the items to be displayed with the use of simple divs and some useful classes such as grid-item or grid-container.
+
+```html
+<div class="popup grid-container hide" id="google-apps">
+  <div class="grid-item grid-item-1">
+    <img src="images/maps.png" alt="Google Maps Logo" />
+    <p>Maps</p>
+  </div>
+  <div class="grid-item grid-item-2">
+    <img src="images/youtube.png" alt="Youtube Logo" />
+    <p>Youtube</p>
+  </div>
+  <div class="grid-item grid-item-3">
+    <img src="images/play.png" alt="Google Play Logo" id="gplay" />
+    <p>Play</p>
+  </div>
+  <!-- There are 9 of them but just to show you an example -->
+</div>
+```
+
+As I mentioned earlier, with just a couple of lines of code in CSS, we are able to organize all items with identical sizes.
+
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 85px);
+  padding: 20px;
+}
+```
+
+In the Javascript file, I had to play for a while until getting the result that I wanted. My aim was to be able to hide the display either by clicking outside of the item or clicking on the google apps button again. This is the solution I came with:
+
+```javascript
+//Select the google apps div
+const btnApps = document.querySelector("#google-drive-container");
+//Select the google apps popup
+const appsPop = document.querySelector("#google-apps");
+
+// Listen for a click on the google apps button or outside the element
+document.addEventListener("mouseup", function (e) {
+  if (btnApps.contains(e.target) && !appsPop.classList.contains("hide")) {
+    appsPop.classList.add("hide");
+  } else if (btnApps.contains(e.target) && appsPop.classList.contains("hide")) {
+    appsPop.classList.remove("hide");
+  } else if (!appsPop.contains(e.target)) {
+    appsPop.classList.add("hide");
+  }
+});
+```
+
+In the end, i really liked the result. Maybe I could think of adding an scroll mode so I can add more than 9 Google items, but more of that in another chapter.
+
 ## Additional Improvements
 
 These are a few improvements that I would like to work on as I have free time during the next months. I will try to implement some of the new acquired knowledge during The Odin Project.
 
 - [ ] Add previous searches box when typing a search
 - [x] Dark Theme Toggle
-- [ ] Pop-up with Javascript for Google Apps and Profile
+- [x] Pop-up with Javascript for Google Apps
 - [ ] Voice recognition software for searching
 - [ ] Build the results page layout
 - [ ] Make it Responsive
