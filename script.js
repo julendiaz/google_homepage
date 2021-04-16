@@ -13,9 +13,9 @@ const appsPop = document.querySelector("#google-apps");
 // Listen for a click on the checkbox
 function toggleTheme() {
     if (toggle.checked) {
-        theme.href = "css/dark.css";
+        theme.href = "..css/dark.css";
     } else {
-        theme.href = "css/styles.css";
+        theme.href = "..css/styles.css";
     }
 };
 
