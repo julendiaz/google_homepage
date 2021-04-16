@@ -7,7 +7,16 @@ Go to the [Live Preview](https://shifujulen.github.io/google_homepage/)
 ## Table of Contents
 
 - [Brief Introduction](#Brief-Introduction)
+- [Goals of the Project](#Goals-of-the-project)
+- [Key Features](#Key-Features)
 - [Approaches](#Approaches)
+  - [Search Bar Box-shadow](#Search-Bar-Box-Shadow)
+  - [Footer Flex-box](#Footer-Flex-box)
+  - [Switch Toggle Theme](#Switch-Toggle-Theme)
+  - [Google Apps Pop Up](#Google-Apps-Pop-Up)
+- [Additional Improvements](#Additional-Improvements)
+- [Other Sources](#Other-Sources)
+- [Credits](#Credits)
 
 ## Brief Introduction
 
