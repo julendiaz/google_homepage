@@ -1,13 +1,7 @@
-// Toggle Theme
-// Select the button
+// Selectors
 const toggle = document.querySelector("#toggle");
-// Select the stylesheet
 const theme = document.querySelector("#theme-link");
-
-//Google apps
-//Select the google apps div
 const btnApps = document.querySelector("#google-drive-container");
-//Select the google apps popup
 const appsPop = document.querySelector("#google-apps");
 
 // Listen for a click on the checkbox
