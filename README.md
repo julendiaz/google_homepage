@@ -14,6 +14,7 @@ Go to the [Live Preview](https://shifujulen.github.io/google_homepage/)
   - [Footer Flex-box](#Footer-Flex-box)
   - [Switch Toggle Theme](#Switch-Toggle-Theme)
   - [Google Apps Pop Up](#Google-Apps-Pop-Up)
+  - [Previous Searches Display](#Previous-Searches-Display)
 - [Additional Improvements](#Additional-Improvements)
 - [Other Sources](#Other-Sources)
 - [Credits](#Credits)
@@ -42,6 +43,7 @@ This was the first time working with a developer's environment in Linux. At firs
 - Google apps plus Profile pic in the center for simple alignment
 - Dark Theme Toggle
 - Google Apps Display Pop Up
+- Previous Searches Display
 
 ## Approaches
 
