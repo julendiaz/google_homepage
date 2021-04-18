@@ -45,14 +45,36 @@
     <main>
         <div id="things-in-center">
             <img id ="google-image" src="images/Google-Logo.png" alt="Google Logo">
-            <form autocomplete="on" id="search-nav">
-                <img id="lupa" src="images/search.png" alt="search icon">
-                <input type="text" placeholder="Search Google or type a URL">
-                <img id="mic" src="images/mic.png" alt="mic google">
+            <form autocomplete="off" id="search-nav">
+                <div id="input-container">
+                    <img id="lupa" src="images/search.png" alt="search icon">
+                    <input type="text" placeholder="Search Google or type a URL" id="search-input">
+                    <img id="mic" src="images/mic.png" alt="mic google">
+                </div> 
+                <div class="previous-search">
+                    <img id="clock" src="images/clock.png" alt="search icon">
+                    <p class="paragraph-search" id="search0">How to learn code</p>
+                </div>
+                <div class="previous-search">
+                    <img id="clock" src="images/clock.png" alt="search icon">
+                    <p class="paragraph-search" id="search1">Is programming that hard?</p>
+                </div>
+                <div class="previous-search">
+                    <img id="clock" src="images/clock.png" alt="search icon">
+                    <p class="paragraph-search" id="search2">Should I learn Javascript or Python?</p>
+                </div>
+                <div class="previous-search">
+                    <img id="clock" src="images/clock.png" alt="search icon">
+                    <p class="paragraph-search" id="search3">The Odin Project opinions</p>
+                </div>
+                <div class="previous-search">
+                    <img id="clock" src="images/clock.png" alt="search icon">
+                    <p class="paragraph-search" id="search4">How to change background color in CSS</p>
+                </div>
             </form>
             <div id="btn-container">
                 <button class="btn" id="btn-search">Google Search</button>
-                <button class="btn" id="btn-search">I'm feeling lucky</button>
+                <button class="btn" id="btn-lucky">I'm feeling lucky</button>
             </div>
         </div>
     </main>
