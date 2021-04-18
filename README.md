@@ -188,11 +188,66 @@ document.addEventListener("mouseup", function (e) {
 
 In the end, i really liked the result. Maybe I could think of adding an scroll mode so I can add more than 9 Google items, but more of that in another chapter.
 
+### Previous Searches Display
+
+Okey, I think this was by far the most troublesome feature for now. For some reason, I didn't know if the autocomplete attribute of the search input form worked. That's why I wanted to try and re-create by my own a simple autocomplete for the previous searches like Google has.
+
+Starting with the HTML, I just had to add 5 more divs underneath the already made search-nav. I thought of trying to add with a loop 5 of these elements with javascript but I didn't really know how to do that, so I went for the simpler route.
+
+```html
+<div class="previous-search">
+  <img id="clock" src="images/clock.png" alt="search icon" />
+  <p class="paragraph-search" id="search0">How to learn code</p>
+</div>
+```
+
+For the CSS there is not much mistery about it. I just tried to add the same styles like the search-nav, with the singularity of leaving the display to "none", in order to trigger it with Javascript.
+
+```css
+.previous-search {
+  display: none;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--texthover);
+}
+```
+
+Finally, in the javascript file I enjoyed playing with different ways of displaying an element regarding the clicks. For getting a cleaner result, I stored the actions of opening and closing the previous searches display in two functions. Another solution for simplification, was to use the template literal to select each of the previous searches in case of a click.
+
+```javascript
+// Listen for clicks in order to display or not previous searches
+document.addEventListener("click", function (e) {
+  if (searchInput.contains(e.target)) {
+    openSearches();
+  } else if (!searchNav.contains(e.target)) {
+    closeSearches();
+  }
+  // Fill the input with the selected previous search
+  for (let j = 0; j < previousSearches.length; j++) {
+    if (previousSearches[j].contains(e.target)) {
+      searchInput.value = document.getElementById(`search${j}`).textContent;
+      closeSearches();
+    }
+  }
+});
+```
+
+Thanks to a few hours of research, I encountered an article about how to check if the value of an input is empty or not. This way I could close down the display whenever the users starts typing. It was as simple as this:
+
+```javascript
+searchInput.addEventListener("input", (evt) => {
+  closeSearches();
+});
+```
+
 ## Additional Improvements
 
 These are a few improvements that I would like to work on as I have free time during the next months. I will try to implement some of the new acquired knowledge during The Odin Project.
 
-- [ ] Add previous searches box when typing a search
+- [x] Add previous searches box when typing a search
 - [x] Dark Theme Toggle
 - [x] Pop-up with Javascript for Google Apps
 - [ ] Voice recognition software for searching
@@ -205,6 +260,7 @@ If you have a cool idea on how to implement a feature, please don't hesitate on 
 ## Other Sources
 
 [How to build a great search box](https://medium.com/@samdutton/how-to-build-a-great-search-box-2b9a6d1dce0d)
+[Checking if an input is empty](https://zellwk.com/blog/check-empty-input-js/)
 
 ## Credits
 
