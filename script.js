@@ -40,7 +40,7 @@ const openSearches = function () {
 }
 
 const closeSearches = function () {
-    searchNav.style.height = "50px";
+    searchNav.style.height = "3.3em";
     searchBtn.style.display = "block";
     luckyBtn.style.display = "block";
     for(let i = 0; i < previousSearches.length; i++) {

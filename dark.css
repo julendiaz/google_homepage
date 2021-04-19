@@ -18,10 +18,10 @@ body {
 
 #profile-container {
   background-color: var(--containerback);
-  width: 65px;
-  height: 33px;
-  margin: 30px auto;
-  border-radius: 5px;
+  width: 4em;
+  height: 2.06em;
+  margin: 1.88em auto;
+  border-radius: 0.3em;
   display: flex;
   justify-content: center;
 }
@@ -37,42 +37,42 @@ body {
 
 #drive-icon {
   width: 100%;
-  margin-left: 1px;
-  margin-top: 2px;
+  margin-left: 0.0625em;
+  margin-top: 0.125em;
 }
 
 #pic-container {
   width: 100%;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 0.3125em 0.3125em 0;
 }
 
 #profile-pic {
   width: 100%;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 0.3125em 0.3125em 0;
 }
 
 /* Google Apps Display */
 
 .popup {
-  width: 255px;
-  height: 245px;
+  width: 15.9375em;
+  height: 15.3125em;
   background-color: var(--footerback);
   position: absolute;
-  top: 70px;
+  top: 4.375em;
   right: 50%;
-  border-radius: 8px 0 0 8px;
+  border-radius: 0.5em 0 0 0.5em;
   z-index: 5;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 85px);
-  padding: 20px;
+  padding: 1.25em;
 }
 
 .grid-item {
   background-color: var(--footerback);
-  border-radius: 5px;
+  border-radius: 0.3125em;
   opacity: 70%;
 }
 
@@ -85,34 +85,34 @@ body {
 .grid-item img {
   width: 50%;
   display: block;
-  margin: 8px auto;
+  margin: 0.5em auto;
 }
 
 .grid-item p {
   font-size: 0.6rem;
   font-family: var(--montserrat);
-  color: rgb(219, 219, 219);
   font-weight: 400;
   text-align: center;
-  margin-top: -3px;
+  margin-top: -0.1875em;
+  color: rgb(230, 230, 230);
 }
 
 .grid-item #gplay {
   width: 45%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0.625em;
+  margin-bottom: 0.625em;
 }
 
 .grid-item #gmeet {
   width: 48%;
-  margin-top: 12px;
-  margin-bottom: 13px;
+  margin-top: 0.75em;
+  margin-bottom: 0.8125em;
 }
 
 .grid-item .gfoot {
   width: 48%;
-  margin-top: 12px;
-  margin-bottom: 13px;
+  margin-top: 0.75em;
+  margin-bottom: 0.8125em;
 }
 
 .hide {
@@ -122,9 +122,9 @@ body {
 /* Main */
 
 #things-in-center {
-  width: 800px;
-  height: 400px;
-  margin: 112px auto;
+  width: 50em;
+  height: 25em;
+  margin: 7em auto;
 }
 
 #google-image {
@@ -140,8 +140,8 @@ body {
   margin: 0 auto;
   font-family: var(--montserrat);
   width: 75%;
-  height: 50px;
-  border-radius: 5px;
+  height: 3.3em;
+  border-radius: 0.3125em;
   background: var(--searchback);
 }
 
@@ -151,11 +151,11 @@ body {
 }
 
 #lupa {
-  width: 25px;
-  height: 25px;
+  width: 1.5625em;
+  height: 1.5625em;
   opacity: 40%;
-  margin-left: 11px;
-  margin-top: 13px;
+  margin-left: 0.6875em;
+  margin-top: 0.8125em;
   filter: invert();
 }
 
@@ -165,10 +165,10 @@ body {
 }
 
 #mic {
-  width: 18px;
-  height: 24px;
-  margin-top: 12px;
-  margin-left: 23px;
+  width: 1.125em;
+  height: 1.5em;
+  margin-top: 0.75em;
+  margin-left: 1.4375em;
   opacity: 80%;
 }
 
@@ -178,17 +178,17 @@ body {
 }
 
 #search-nav input[type="text"] {
-  padding: 6px;
+  padding: 0.375em;
   border: none;
-  margin-left: 14px;
-  margin-top: 3px;
+  margin-left: 0.875em;
+  margin-top: 0.33em;
   background-color: transparent;
   font-family: var(--montserrat);
   width: 80%;
-  height: 33px;
+  height: 2.0625em;
   font-size: 0.9rem;
   font-weight: 500;
-  color: rgb(219, 219, 219);
+  color: rgb(223, 223, 223);
   appearance: none;
 }
 
@@ -197,13 +197,13 @@ body {
 }
 
 #search-nav input[type="text"]::placeholder {
-  opacity: 80%;
+  opacity: 50%;
 }
 
 .previous-search {
   display: none;
   width: 100%;
-  height: 50px;
+  height: 3.125em;
   align-items: center;
   font-weight: 500;
   font-size: 0.85rem;
@@ -220,38 +220,37 @@ body {
 }
 
 #clock {
-  width: 20px;
-  height: 20px;
+  width: 1.25em;
+  height: 1.25em;
   opacity: 40%;
-  margin-left: 14px;
-  margin-top: 1px;
+  margin-left: 0.875em;
+  margin-top: 0.0625em;
   filter: invert();
 }
 
 .previous-search p {
-  margin-left: 20px;
+  margin-left: 1.25em;
 }
-
 /* Buttons */
 
 #btn-container {
   display: flex;
   margin: 0 auto;
-  width: 350px;
+  width: 21.875em;
   justify-content: center;
 }
 
 .btn {
   display: block;
-  margin: 45px auto;
-  width: 160px;
-  height: 45px;
+  margin: 3.5em auto;
+  width: 12.8em;
+  height: 3.6em;
   font-size: 0.8rem;
   font-weight: 400;
   color: #838383;
   border: 0;
   background: var(--containerback);
-  border-radius: 5px;
+  border-radius: 0.3125em;
   font-family: var(--montserrat);
 }
 
@@ -277,13 +276,13 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 53px;
+  height: 3.7em;
   width: 100%;
   display: flex;
   justify-content: space-between;
   font-family: var(--montserrat);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 .footer-links {
@@ -299,7 +298,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 400px;
+  width: 25em;
 }
 
 #footer-container-left {
@@ -308,7 +307,7 @@ footer {
 }
 
 .left-links {
-  margin-left: 50px;
+  margin-left: 3.125em;
 }
 
 /* Toggle Switch Theme */
@@ -317,9 +316,9 @@ footer {
 .switch {
   position: relative;
   display: inline-block;
-  width: 46px;
-  height: 25px;
-  margin-left: 50px;
+  width: 2.875em;
+  height: 1.5625em;
+  margin-left: 3.125em;
 }
 
 /* Hide default HTML checkbox */
@@ -337,18 +336,18 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: rgb(221, 221, 221);
   transition: 0.4s;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 18px;
-  width: 18px;
-  left: 4px;
-  bottom: 3.5px;
-  background-color: var(--footertext);
+  height: 1.125em;
+  width: 1.125em;
+  left: 0.25em;
+  bottom: 0.2188em;
+  background-color: #b9b9b9;
   transition: 0.4s;
 }
 
@@ -357,18 +356,18 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px rgb(29, 29, 29);
+  box-shadow: 0 0 0.0625em rgb(29, 29, 29);
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(20px);
-  -ms-transform: translateX(20px);
-  transform: translateX(20px);
+  -webkit-transform: translateX(18.5px);
+  -ms-transform: translateX(18.5px);
+  transform: translateX(18.5px);
 }
 
 /* Rounded Sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 2.125em;
 }
 
 .slider.round:before {
