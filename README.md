@@ -254,8 +254,8 @@ These are a few improvements that I would like to work on as I have free time du
 - [x] Pop-up with Javascript for Google Apps
 - [ ] Voice recognition software for searching
 - [ ] Build the results page layout
-- [ ] Make it Responsive
 - [ ] Add Spanish and Japanese Versions
+- [ ] **Create a Google Clone with React JS and API's**
 
 If you have a cool idea on how to implement a feature, please don't hesitate on contributing on the project or send me a message with the feedback.
 
