@@ -252,6 +252,7 @@ These are a few improvements that I would like to work on as I have free time du
 - [x] Add previous searches box when typing a search
 - [x] Dark Theme Toggle
 - [x] Pop-up with Javascript for Google Apps
+- [x] Change Typography
 - [ ] Voice recognition software for searching
 - [ ] Build the results page layout
 - [ ] Add Spanish and Japanese Versions
