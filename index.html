@@ -1,104 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Homepage</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <!-- RESET CSS -->
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset.css" />
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/styles.css" id="theme-link">
+    <link rel="stylesheet" href="css/styles.css" id="theme-link" />
     <!-- TYPOGRAPHY -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Profile -->
     <header>
-        <div id="profile-container">
-            <div id="google-drive-container">
-                <img id="drive-icon" src="images/drive-icon.png" alt="Drive icon">
-            </div>
-            <div id="pic-container">
-                <a href="https://github.com/shifujulen" target="_blank"><img id="profile-pic" src="images/profile.png" alt="profiel pic"></a>
-            </div>
+      <div id="profile-container">
+        <div id="google-drive-container">
+          <img id="drive-icon" src="images/drive-icon.png" alt="Drive icon" />
         </div>
-        <!-- Google Apps Display -->
-        <div class="popup grid-container hide" id="google-apps">
-            <div class="grid-item grid-item-1"><img src="images/maps.png" alt="Google Maps Logo"><p>Maps</p></div>
-            <div class="grid-item grid-item-2"><img src="images/youtube.png" alt="Youtube Logo"><p>Youtube</p></div>
-            <div class="grid-item grid-item-3"><img src="images/play.png" alt="Google Play Logo" id="gplay"><p>Play</p></div>
-            <div class="grid-item grid-item-4"><img src="images/gmail.png" alt="Google Gmail Logo"><p>Gmail</p></div>
-            <div class="grid-item grid-item-5"><img src="images/drive.png" alt="Google Drive Logo"><p>Drive</p></div>
-            <div class="grid-item grid-item-6"><img src="images/meet.png" alt="Google Meet Logo" id="gmeet"><p>Meet</p></div>
-            <div class="grid-item grid-item-7"><img src="images/calendar.png" alt="Google Calendar Logo" class="gfoot"><p>Calendar</p></div>
-            <div class="grid-item grid-item-8"><img src="images/contaqcts.png" alt="Google Contacts Logo" class="gfoot"><p>Contacts</p></div>
-            <div class="grid-item grid-item-9"><img src="images/podcasts.png" alt="Google Podcasts Logo" class="gfoot"><p>Podcasts</p></div>
+        <div id="pic-container">
+          <a href="https://github.com/shifujulen" target="_blank"
+            ><img id="profile-pic" src="images/profile.png" alt="profiel pic"
+          /></a>
         </div>
+      </div>
+      <!-- Google Apps Display -->
+      <div class="popup grid-container hide" id="google-apps">
+        <div class="grid-item grid-item-1">
+          <img src="images/maps.png" alt="Google Maps Logo" />
+          <p>Maps</p>
+        </div>
+        <div class="grid-item grid-item-2">
+          <img src="images/youtube.png" alt="Youtube Logo" />
+          <p>Youtube</p>
+        </div>
+        <div class="grid-item grid-item-3">
+          <img src="images/play.png" alt="Google Play Logo" id="gplay" />
+          <p>Play</p>
+        </div>
+        <div class="grid-item grid-item-4">
+          <img src="images/gmail.png" alt="Google Gmail Logo" />
+          <p>Gmail</p>
+        </div>
+        <div class="grid-item grid-item-5">
+          <img src="images/drive.png" alt="Google Drive Logo" />
+          <p>Drive</p>
+        </div>
+        <div class="grid-item grid-item-6">
+          <img src="images/meet.png" alt="Google Meet Logo" id="gmeet" />
+          <p>Meet</p>
+        </div>
+        <div class="grid-item grid-item-7">
+          <img
+            src="images/calendar.png"
+            alt="Google Calendar Logo"
+            class="gfoot"
+          />
+          <p>Calendar</p>
+        </div>
+        <div class="grid-item grid-item-8">
+          <img
+            src="images/contaqcts.png"
+            alt="Google Contacts Logo"
+            class="gfoot"
+          />
+          <p>Contacts</p>
+        </div>
+        <div class="grid-item grid-item-9">
+          <img
+            src="images/podcasts.png"
+            alt="Google Podcasts Logo"
+            class="gfoot"
+          />
+          <p>Podcasts</p>
+        </div>
+      </div>
     </header>
-    
+
     <!-- Center of Google -->
     <main>
-        <div id="things-in-center">
-            <img id ="google-image" src="images/Google-Logo.png" alt="Google Logo">
-            <form autocomplete="off" id="search-nav">
-                <div id="input-container">
-                    <img id="lupa" src="images/search.png" alt="search icon">
-                    <input type="text" placeholder="Search Google or type a URL" id="search-input">
-                    <img id="mic" src="images/mic.png" alt="mic google">
-                </div> 
-                <div class="previous-search">
-                    <img id="clock" src="images/clock.png" alt="search icon">
-                    <p class="paragraph-search" id="search0">How to learn code</p>
-                </div>
-                <div class="previous-search">
-                    <img id="clock" src="images/clock.png" alt="search icon">
-                    <p class="paragraph-search" id="search1">Is programming that hard?</p>
-                </div>
-                <div class="previous-search">
-                    <img id="clock" src="images/clock.png" alt="search icon">
-                    <p class="paragraph-search" id="search2">Should I learn Javascript or Python?</p>
-                </div>
-                <div class="previous-search">
-                    <img id="clock" src="images/clock.png" alt="search icon">
-                    <p class="paragraph-search" id="search3">The Odin Project opinions</p>
-                </div>
-                <div class="previous-search">
-                    <img id="clock" src="images/clock.png" alt="search icon">
-                    <p class="paragraph-search" id="search4">How to change background color in CSS</p>
-                </div>
-            </form>
-            <div id="btn-container">
-                <button class="btn" id="btn-search">Google Search</button>
-                <button class="btn" id="btn-lucky">I'm feeling lucky</button>
-            </div>
+      <div id="things-in-center">
+        <img id="google-image" src="images/Google-Logo.png" alt="Google Logo" />
+        <form autocomplete="off" id="search-nav">
+          <div id="input-container">
+            <img id="lupa" src="images/search.png" alt="search icon" />
+            <input
+              type="text"
+              placeholder="Search Google or type a URL"
+              id="search-input"
+            />
+            <img id="mic" src="images/mic.png" alt="mic google" />
+          </div>
+          <div class="previous-search">
+            <img id="clock" src="images/clock.png" alt="search icon" />
+            <p class="paragraph-search" id="search0">How to learn code</p>
+          </div>
+          <div class="previous-search">
+            <img id="clock" src="images/clock.png" alt="search icon" />
+            <p class="paragraph-search" id="search1">
+              Is programming that hard?
+            </p>
+          </div>
+          <div class="previous-search">
+            <img id="clock" src="images/clock.png" alt="search icon" />
+            <p class="paragraph-search" id="search2">
+              Should I learn Javascript or Python?
+            </p>
+          </div>
+          <div class="previous-search">
+            <img id="clock" src="images/clock.png" alt="search icon" />
+            <p class="paragraph-search" id="search3">
+              The Odin Project opinions
+            </p>
+          </div>
+          <div class="previous-search">
+            <img id="clock" src="images/clock.png" alt="search icon" />
+            <p class="paragraph-search" id="search4">
+              How to change background color in CSS
+            </p>
+          </div>
+        </form>
+        <div id="btn-container">
+          <button class="btn" id="btn-search">Google Search</button>
+          <button class="btn" id="btn-lucky">I'm feeling lucky</button>
         </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <ul class="footer-container" id="footer-container-left">
-            <li><a class="footer-links left-links" href="https://about.google/" target="_blank">About</a></li>
-            <label class="switch">
-                <input type="checkbox" id="toggle" onclick="toggleTheme()">
-                <span class="slider round"></span>
-            </label> 
-        </ul>
-        <ul class="footer-container">
-            <li><a class="footer-links" href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></li>
-        </ul>
-        <ul class="footer-container">
-            <li><a class="footer-links" href="https://policies.google.com/privacy?hl=en-FR&fg=1" target="_blank">Privacy</a></li>
-            <li><a class="footer-links" href="https://policies.google.com/terms?hl=en-FR&fg=1" target="_blank">Terms</a></li>
-            <li><a class="footer-links" href="https://support.google.com/websearch/answer/7585859?p=fr_consumer_info&hl=en-FR&fg=1&visit_id=637537333631285188-129283775&rd=1" target="_blank">Consumer Info</a></li>
-        </ul>
+      <ul class="footer-container" id="footer-container-left">
+        <li>
+          <a
+            class="footer-links left-links"
+            href="https://about.google/"
+            target="_blank"
+            >About</a
+          >
+        </li>
+        <label class="switch">
+          <input type="checkbox" id="toggle" onclick="toggleTheme()" />
+          <span class="slider round"></span>
+        </label>
+      </ul>
+      <ul class="footer-container">
+        <li>
+          <a
+            class="footer-links"
+            href="https://www.theodinproject.com/"
+            target="_blank"
+            >The Odin Project</a
+          >
+        </li>
+      </ul>
+      <ul class="footer-container">
+        <li>
+          <a
+            class="footer-links"
+            href="https://policies.google.com/privacy?hl=en-FR&fg=1"
+            target="_blank"
+            >Privacy</a
+          >
+        </li>
+        <li>
+          <a
+            class="footer-links"
+            href="https://policies.google.com/terms?hl=en-FR&fg=1"
+            target="_blank"
+            >Terms</a
+          >
+        </li>
+        <li>
+          <a
+            class="footer-links"
+            href="https://support.google.com/websearch/answer/7585859?p=fr_consumer_info&hl=en-FR&fg=1&visit_id=637537333631285188-129283775&rd=1"
+            target="_blank"
+            >Consumer Info</a
+          >
+        </li>
+      </ul>
     </footer>
-   
+
     <!-- Javascript -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

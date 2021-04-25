@@ -32,7 +32,7 @@ This was the first time working with a developer's environment in Linux. At firs
 - [x] Start thinking about how elements get placed on the page
 - [x] How elements get styled and aligned
 - [x] Get used to basic Git Commands
-- [x] Implement your own design with Figma
+- [x] Implement your design with Figma
 - [x] Create and Share a Live Preview Simulation of the site
 
 ## Key Features
@@ -49,7 +49,7 @@ This was the first time working with a developer's environment in Linux. At firs
 
 ### Search Bar Box-Shadow
 
-For this feature, I tried different ways of transitioning between shadows and background-colors when hovering the mouse. In the end, I really liked the way panels in "The Odin Project". I tried mimicking that effect by putting a darker color when hovering and using a transition of 2 seconds.
+For this feature, I tried different ways of transitioning between shadows and background-colors when hovering the mouse. In the end, I liked the way panels in "The Odin Project". I tried mimicking that effect by putting a darker color when hovering and using a transition of 2 seconds.
 
 ```css
 #search-nav {
