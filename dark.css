@@ -236,7 +236,7 @@ body {
 #btn-container {
   display: flex;
   margin: 0 auto;
-  width: 21em;
+  width: 21.2em;
   justify-content: center;
 }
 
@@ -245,7 +245,7 @@ body {
   margin: 3.3em auto;
   width: 10.8em;
   height: 3.3em;
-  font-size: 0.9rem;
+  font-size: 0.93rem;
   font-weight: 500;
   color: #838383;
   border: 0;
