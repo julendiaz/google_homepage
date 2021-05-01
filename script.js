@@ -9,13 +9,15 @@ const searchInput = document.querySelector("#search-input");
 const searchBtn = document.querySelector("#btn-search");
 const luckyBtn = document.querySelector("#btn-lucky");
 const previousSearches = document.getElementsByClassName("previous-search");
+const lupaImg = document.querySelector("#lupa");
+const clockImg = [...document.querySelectorAll(".clock")];
 
 // Listen for a click on the checkbox
 function toggleTheme() {
-  if (toggle.checked) {
-    theme.href = "dark.css";
-  } else {
-    theme.href = "css/styles.css";
+  document.documentElement.classList.toggle("dark-theme");
+  lupaImg.classList.toggle("invert");
+  for (let i = 0; i < clockImg.length; i++) {
+    clockImg[i].classList.toggle("invert");
   }
 }
 

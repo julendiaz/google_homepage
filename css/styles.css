@@ -8,10 +8,28 @@
   --footerback: #f0f0f0;
   --footertext: #888888;
   --texthover: rgb(80, 80, 80);
+  --background: white;
+  --grid-text: rgb(44, 44, 44);
+  --search-shadow: rgba(80, 80, 80, 0.33);
+  --search-hover: rgba(56, 56, 56, 0.33);
+}
+
+:root.dark-theme {
+  --montserrat: "Source Sans Pro", sans-serif;
+  --containerback: #2e2e2e;
+  --containerhover: #333333;
+  --searchback: rgb(56, 56, 56);
+  --footerback: #272727;
+  --footertext: #888888;
+  --texthover: rgb(168, 168, 168);
+  --background: rgb(29, 29, 29);
+  --grid-text: rgb(230, 230, 230);
+  --search-shadow: rgba(8, 8, 8, 0.657);
+  --search-hover: rgba(10, 10, 10, 0.644);
 }
 
 body {
-  background-color: white;
+  background-color: var(--background);
 }
 
 /* Header */
@@ -56,18 +74,18 @@ body {
 .popup {
   width: 15.9375em;
   height: 15.3125em;
-  background-color: white;
+  background-color: var(--background);
   position: absolute;
   top: 4.375em;
   right: 50%;
   border-radius: 0.5em 0 0 0.5em;
   z-index: 5;
-  box-shadow: 0em 0.25em 1.9375em -0.5em rgba(80, 80, 80, 0.33);
+  box-shadow: 0em 0.25em 1.9375em -0.5em var(--search-shadow);
   transition: 0.2s;
 }
 
 .popup:hover {
-  box-shadow: 0em 0.25em 1.9375em -0.5em rgba(10, 10, 10, 0.33);
+  box-shadow: 0em 0.25em 1.9375em -0.5em var(--search-hover);
 }
 
 .grid-container {
@@ -77,7 +95,7 @@ body {
 }
 
 .grid-item {
-  background-color: white;
+  background-color: var(--background);
   border-radius: 0.3125em;
   opacity: 70%;
 }
@@ -100,6 +118,7 @@ body {
   font-weight: 400;
   text-align: center;
   margin-top: -0.1875em;
+  color: var(--grid-text);
 }
 
 .grid-item #gplay {
@@ -148,12 +167,12 @@ body {
   height: 3.3em;
   border-radius: 0.3125em;
   background: var(--searchback);
-  box-shadow: 0em 0.25em 1.9375em -0.5em rgba(80, 80, 80, 0.33);
+  box-shadow: 0em 0.25em 1.9375em -0.5em var(--search-shadow);
 }
 
 #search-nav:hover {
   /* google-shadow */
-  box-shadow: 0em 0.25em 1.9375em -0.5em rgba(56, 56, 56, 0.33);
+  box-shadow: 0em 0.25em 1.9375em -0.5em var(--search-hover);
 }
 
 #input-container {
@@ -229,12 +248,16 @@ body {
   display: block;
 }
 
-#clock {
+.clock {
   width: 1.25em;
   height: 1.25em;
   opacity: 40%;
   margin-left: 1.1em;
   margin-top: 0.0625em;
+}
+
+.invert {
+  filter: invert();
 }
 
 .previous-search p {
