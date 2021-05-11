@@ -12,6 +12,7 @@
   --grid-text: rgb(44, 44, 44);
   --search-shadow: rgba(80, 80, 80, 0.33);
   --search-hover: rgba(56, 56, 56, 0.33);
+  --search-text: rgb(56, 56, 56);
 }
 
 :root.dark-theme {
@@ -26,6 +27,7 @@
   --grid-text: rgb(230, 230, 230);
   --search-shadow: rgba(8, 8, 8, 0.657);
   --search-hover: rgba(10, 10, 10, 0.644);
+  --search-text: rgb(230, 230, 230);
 }
 
 body {
@@ -148,7 +150,7 @@ body {
 #things-in-center {
   width: 50em;
   height: 25em;
-  margin: 7em auto;
+  margin: 8em auto;
 }
 
 #google-image {
@@ -184,8 +186,8 @@ body {
   width: 1.5625em;
   height: 1.5625em;
   opacity: 40%;
-  margin-left: 0.6875em;
-  margin-top: 0.8125em;
+  margin-left: 0.9em;
+  margin-top: 0.9em;
 }
 
 #lupa:hover {
@@ -196,8 +198,8 @@ body {
 #mic {
   width: 1.125em;
   height: 1.5em;
-  margin-top: 0.75em;
-  margin-left: 1.4375em;
+  margin-top: 0.8em;
+  margin-left: 1em;
   opacity: 80%;
 }
 
@@ -217,7 +219,7 @@ body {
   height: 2.0625em;
   font-size: 1.1rem;
   font-weight: 400;
-  color: rgb(56, 56, 56);
+  color: var(--search-text);
   appearance: none;
 }
 
