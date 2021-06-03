@@ -2,7 +2,7 @@
 
 ![Google-Logo](https://user-images.githubusercontent.com/66780327/114438684-5fec0580-9bc8-11eb-83ff-4c16f9cc67fc.PNG)
 
-Go to the [Live Preview](https://shifujulen.github.io/google_homepage/)
+Go to the [Live Preview](https://julendiaz.github.io/google_homepage/)
 
 ## Table of Contents
 
